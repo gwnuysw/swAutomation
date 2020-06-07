@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
 
 namespace csharpStudy
 {
     class Program
     {
-        private IWebDriver driver = new ChromeDriver();
+        private IWebDriver driver;
         IWebElement ele = null;
         static void Main(string[] args)
         {
@@ -18,7 +19,8 @@ namespace csharpStudy
         
         void naverDataScrap()
         {
-            driver.Navigate().GoToUrl("https://finance.naver.com/marketindex/");
+            driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("https://finance.naver.com/marketindex/exchangeList.nhn");
             driver.Manage().Window.Maximize();
             /*
             ele = driver.FindElement(By.LinkText("증권"));
@@ -27,11 +29,16 @@ namespace csharpStudy
             ele = driver.FindElement(By.LinkText("시장지표"));
             ele.Click();
             */
-            IReadOnlyList<IWebElement> eles = driver.FindElements(By.CssSelector("span.date"));
+
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+
+            IReadOnlyList<IWebElement> eles = wait.Until(e => e.FindElements(By.CssSelector("td.sale")));
+
             Console.WriteLine(eles.Count);
         }
         void acmeLogin()
         {
+            driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://acme-test.uipath.com/account/login");
             driver.Manage().Window.Maximize();
 
