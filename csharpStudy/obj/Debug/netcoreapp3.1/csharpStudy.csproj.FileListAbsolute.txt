@@ -1,0 +1,16 @@
+C:\Users\seokwon\OneDrive\문서\github\csharpStudy\csharpStudy\bin\Debug\netcoreapp3.1\csharpStudy.exe
+C:\Users\seokwon\OneDrive\문서\github\csharpStudy\csharpStudy\bin\Debug\netcoreapp3.1\csharpStudy.deps.json
+C:\Users\seokwon\OneDrive\문서\github\csharpStudy\csharpStudy\bin\Debug\netcoreapp3.1\csharpStudy.runtimeconfig.json
+C:\Users\seokwon\OneDrive\문서\github\csharpStudy\csharpStudy\bin\Debug\netcoreapp3.1\csharpStudy.runtimeconfig.dev.json
+C:\Users\seokwon\OneDrive\문서\github\csharpStudy\csharpStudy\bin\Debug\netcoreapp3.1\csharpStudy.dll
+C:\Users\seokwon\OneDrive\문서\github\csharpStudy\csharpStudy\bin\Debug\netcoreapp3.1\csharpStudy.pdb
+C:\Users\seokwon\OneDrive\문서\github\csharpStudy\csharpStudy\obj\Debug\netcoreapp3.1\csharpStudy.csprojAssemblyReference.cache
+C:\Users\seokwon\OneDrive\문서\github\csharpStudy\csharpStudy\obj\Debug\netcoreapp3.1\csharpStudy.AssemblyInfoInputs.cache
+C:\Users\seokwon\OneDrive\문서\github\csharpStudy\csharpStudy\obj\Debug\netcoreapp3.1\csharpStudy.AssemblyInfo.cs
+C:\Users\seokwon\OneDrive\문서\github\csharpStudy\csharpStudy\obj\Debug\netcoreapp3.1\csharpStudy.dll
+C:\Users\seokwon\OneDrive\문서\github\csharpStudy\csharpStudy\obj\Debug\netcoreapp3.1\csharpStudy.pdb
+C:\Users\seokwon\OneDrive\문서\github\csharpStudy\csharpStudy\obj\Debug\netcoreapp3.1\csharpStudy.genruntimeconfig.cache
+C:\Users\seokwon\OneDrive\문서\github\csharpStudy\csharpStudy\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\seokwon\OneDrive\문서\github\csharpStudy\csharpStudy\bin\Debug\netcoreapp3.1\WebDriver.dll
+C:\Users\seokwon\OneDrive\문서\github\csharpStudy\csharpStudy\obj\Debug\netcoreapp3.1\csharpStudy.csproj.CoreCompileInputs.cache
+C:\Users\seokwon\OneDrive\문서\github\csharpStudy\csharpStudy\obj\Debug\netcoreapp3.1\csharpStudy.csproj.CopyComplete
