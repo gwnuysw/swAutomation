@@ -10,6 +10,7 @@ namespace csharpStudy
     {
         private IWebDriver driver;
         IWebElement ele = null;
+        IReadOnlyList<IWebElement> eles;
         static void Main(string[] args)
         {
             Program csharpPath = new Program();
@@ -20,21 +21,26 @@ namespace csharpStudy
         void naverDataScrap()
         {
             driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("https://finance.naver.com/marketindex/exchangeList.nhn");
+            driver.Navigate().GoToUrl("https://www.naver.com/");
             driver.Manage().Window.Maximize();
-            /*
+            
             ele = driver.FindElement(By.LinkText("증권"));
             ele.Click();
 
             ele = driver.FindElement(By.LinkText("시장지표"));
             ele.Click();
-            */
+
+            ele = driver.FindElement(By.Id("frame_ex1"));
+            driver.SwitchTo().Frame(ele);
 
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 
-            IReadOnlyList<IWebElement> eles = wait.Until(e => e.FindElements(By.CssSelector("td.sale")));
+            eles = wait.Until(e => e.FindElements(By.CssSelector("td.tit")));
 
-            Console.WriteLine(eles.Count);
+            foreach(IWebElement item in eles)
+            {
+                Console.WriteLine(item.Text);
+            }            
         }
         void acmeLogin()
         {
